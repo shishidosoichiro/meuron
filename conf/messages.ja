@@ -1,0 +1,9 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+site.name=Meuron
+site.version=0.0.1
+site.description=Meuronは、なんというかまあ、ゆるゆるに映像や音楽をかけ続けるサイトなんです。
+
+navbar.home=ホーム
