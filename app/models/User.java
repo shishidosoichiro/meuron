@@ -32,11 +32,18 @@ public class User extends Model {
 		return this.id == user.id;
 	}
 
+	/**
+		Return username + savedAt
+	*/
 	public String toString() {
 		return username + "(savedAt:" + this.savedAt.toString() + ")";
 	}
 
+	/**
+		Get user by username.
+	*/
 	public static User get(String username) {
 		return User.find("byUsername", username).first();
 	}
+
 }

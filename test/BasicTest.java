@@ -6,7 +6,7 @@ import models.*;
 public class BasicTest extends UnitTest {
 
 	@Test
-	public void userTest() {
+	public void testUser() {
     Fixtures.deleteAll();
     Fixtures.loadModels("data.yml");
 	
@@ -19,6 +19,16 @@ public class BasicTest extends UnitTest {
 		assertNotNull(shishidohinata);
 		assertFalse(shishidohinata.equals(shishido));
 		
+	}
+
+	@Test
+	public void testTwitterAccount() {
+    Fixtures.deleteAll();
+    Fixtures.loadModels("data.yml");
+	
+		User shishidohinata = User.get("shishidohinata");
+		TwitterAccount account = new TwitterAccount(shishidohinata);
+		assertEquals(account.user, shishidohinata);
 	}
 
 }

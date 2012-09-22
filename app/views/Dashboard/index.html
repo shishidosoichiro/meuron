@@ -1,0 +1,7 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+#{set nav:'home' /}
+
+#{ifnot loginuser}
+	#{include 'hero-unit.html' /}
+#{/ifnot}

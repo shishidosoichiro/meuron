@@ -7,3 +7,4 @@ site.version=0.0.1
 site.description=Meuronは、なんというかまあ、ゆるゆるに映像や音楽をかけ続けるサイトなんです。
 
 navbar.home=ホーム
+navbar.logout=ログアウト
