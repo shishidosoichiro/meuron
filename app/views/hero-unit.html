@@ -1,0 +1,10 @@
+<div class="hero-unit">
+	<h1>&{'site.name'}</h1>
+	<p>&{'site.description'}</p>
+	<p>
+		<a href="@{Twitter.authenticate()}" id="sign-in-with-twitter"><img src="@{'/public/images/twitter/sign-in-with-twitter-d.png'}" /></a>
+		#{if play.mode.isDev() }
+			***application mode : dev *** --> <a href="@{TestAuthentication.authenticate()}" id="sign-in"><img src="@{'/public/images/twitter/sign-in-with-twitter-d.png'}" /></a>
+		#{/if}
+	</p>
+</div>
